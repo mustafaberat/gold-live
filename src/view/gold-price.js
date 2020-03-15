@@ -1,13 +1,14 @@
 import * as React from 'react';
-import { Text, View } from 'react-native'
+import { Text } from 'react-native'
 
 import Box from '../components/box'
+import BoxCenter from '../components/box-center'
 
 export default function GoldPriceView() {
     return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <BoxCenter>
             <Text>gold-price!</Text>
             <Box size={20} bg="blue" />
-        </View>
+        </BoxCenter>
     );
 }
